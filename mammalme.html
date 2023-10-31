@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Mammal</title>
+    <script>
+        function Mammal(species,sound){
+            this.species=species;
+            this.sound=sound;
+        
+        }
+        Mammal.prototype={
+            constructor: Mammal,
+            makeSound: function(){
+                console.log("I am a  "+this.species+" and I "+this.sound);
+            }
+        }
+        var cat=new Mammal("cat","Meow");
+        console.log(cat);
+        cat.makeSound()
+        var Dog=new Mammal("Dog", "Woah");
+        Dog.makeSound()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
